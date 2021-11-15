@@ -1,69 +1,100 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <style>
-      	body {
-        	background-color: lightyellow;
-            padding: 2%;
-            margin: 0%;
-        }
-		table, tr, td {
-    		border: 1px solid black;
-    		border-collapse: collapse;
-    		width: 100%
-  		}
-        .logo {
-        	background-color: yellow;
-            width: 15%
-        }
-        .title {
-        	background-color: green;
-            text-transform: capitalize;
-            font-weight: bold;
-        }
-        .article-row {
-        	background-color: lightgreen;
-        }
-        .article {
-        	font-weight: bold;
-            text-transform: capitalize;
-        }
-        footer {
-        	background-color: darkgreen;
-        }
-      </style>
-  </head>
-  <body>
-  	<header>
-    <div class="logo">logo</div>
-    <div class="title">title</div>
-    </header>
-  	<table class="table">
-      <tr class="article-row">
-        <td class="article">article</td>
-        <td class="date">date</td>
-      </tr>
-      <tr class="text">
-        <td colspan="2">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem 			  ipsum</td>
-      </tr>
-      <tr class="article-row">
-        <td class="article">article</td>
-        <td class="date">date</td>
-      </tr>
-      <tr class="text">
-        <td colspan="2"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 				lorem ipsum</td>
-      </tr>      
-      <tr class="article-row">
-        <td class="article">article</td>
-        <td class="date">date</td>
-      </tr>
-      <tr class="text">
-        <td colspan="2">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum loremipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem 		ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 			  lorem ipsum</td>
-      </tr>
-    </table>
-  </body>
-  <footer class="footer">
-  	Copyright &copy
-  </footer>
-</html>
 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News V1</title>
+        <style>
+            body {
+                background-color: lightyellow;
+                padding: 2%;
+                margin: 0%;
+                color: black
+            }
+            .logo {
+                background-color: yellow;
+                width: 75px;
+                height: 75px;
+            }
+            .title {
+                background-color: none;
+                text-transform: capitalize;
+                font-weight: bold;
+                border-bottom: 1px solid gray;
+            }
+            table, tr, td {
+                border-collapse: collapse;
+                width: 100%;
+                text-align: justify;
+            }
+            .article-row {
+                background-color: none;
+                border-bottom: 1px solid gray;
+            }
+            .article {
+                font-weight: bold;
+                text-transform: capitalize;
+                width: 75%;
+            }
+            .date {
+                text-align-last: right;
+                font-style: italic;
+            }
+            footer {
+                background-color: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="">
+                <img class="logo" src="images/Logo.png" alt="logo">
+            </a>
+            <div class="title">title</div>
+        </header>
+        <table class="table">
+            <tr class="article-row">
+                <td class="article">article</td>
+                <td class="date">2000-05-16</td>
+            </tr>
+            <tr class="text">
+                <td colspan="2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum iusto omnis ea saepe eum
+                    commodi nam aliquam ipsa aut! Voluptate impedit totam sint dolorum mollitia itaque assumenda velit
+                    consequuntur voluptatem. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+                    ipsum lorem
+                    ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                    lorem ipsum</td>
+            </tr>
+            <tr class="article-row">
+                <td class="article">article</td>
+                <td class="date">2000-05-03</td>
+            </tr>
+            <tr class="text">
+                <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed enim ipsum illo earum est?
+                    Repellendus dolorum eligendi inventore amet officiis necessitatibus porro sunt ducimus vero, architecto
+                    excepturi rem vel quasi! lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+                    ipsum lorem
+                    ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                    lorem ipsum</td>
+            </tr>
+            <tr class="article-row">
+                <td class="article">article</td>
+                <td class="date">2000-04-29</td>
+            </tr>
+            <tr class="text">
+                <td colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, officiis corporis
+                    iure voluptate eos ipsam at architecto recusandae laboriosam ipsum qui unde quas fuga facere pariatur a
+                    quod aut illo? lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum loremipsum lorem ipsum lorem
+                    ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                    lorem ipsum</td>
+            </tr>
+        </table>
+    </body>
+    <footer class="footer">
+        Copyright &copy
+    </footer>
+
+</html>
