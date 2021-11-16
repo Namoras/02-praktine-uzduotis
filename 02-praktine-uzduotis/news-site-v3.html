@@ -5,10 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News V3</title>
+    <style>
+
+        body { 
+            color: black;
+            padding: 5px;
+            text-transform: capitalize;
+            background-color: whitesmoke;
+        }
+        a:hover, a:active {
+            background-color: red;
+            color: white;
+        }
+        .page_top { 
+            background-color: rgb(207, 204, 204);
+            display: table;
+            width: 100%;
+        }
+        .page_top_name {
+            float: left;
+            color: red;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        .page_top_info {
+            float: left;
+            margin-top: 13px;
+            font-weight: bolder;
+            padding-left: 15px;
+        }
+        .page_top_buttons {
+            display: table;
+            float: right;
+        }
+        .page_top_button1 {
+            display: inline-block;
+            font-weight: bolder;
+            padding: 8px;
+            margin: 5px;
+        }
+        .page_top_button2 {
+            display: inline-block;
+            font-weight: bolder;
+            padding: 5px;
+            margin: 5px;
+        }
+        .page_top_button3 {
+            display: inline-block;
+            font-weight: bolder;
+            padding: 5px;
+            margin: 5px;
+        }
+        .page { border: 1px solid black;
+            display: table;
+        }
+        .page_news { border: 1px solid black;
+            display: inline-block;
+        }
+        .page_news_date { border: 1px solid black;
+            display: table-cell;
+        }
+        .page_news_date_border { border: 1px solid black;
+            display: table;
+            margin: 5px;
+        }
+        .page_news_date_top { border: 1px solid black;
+            display: table-row;
+            background-color: red;
+        }
+        .page_news_date_day { border: 1px solid black;
+            display: table-row;
+            color: red;
+        }
+        .page_news_date_bottom { border: 1px solid black;
+            display: table-row;
+            background-color: grey;
+        }
+        .page_news_text { border: 1px solid black;
+            display: table-cell;
+        }
+        .page_news_text_title { border: 1px solid black;
+            display: inline-block;
+        }
+        .page_news_text_author { border: 1px solid black;
+            display: inline-block;
+        }
+        .page_news_text_inside { border: 1px solid black;
+            display: inline-block;
+        }
+        .page_news_text_menu { border: 1px solid black;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <div class="page_top">
+            <div class="page_top_name"> <img src="htttp://ghjkyl.com"> most popular stories</div>
+            <div class="page_top_info"><a>whats this?</a></div>
+            <div class="page_top_buttons">
+                <div class="page_top_button1"><a>now</a></div>
+                <div class="page_top_button2"><a>today</a></div>
+                <div class="page_top_button3"><a>this week</a></div>
+            </div>    
+        </div>
+    </header>
+    <main>
+        <div class="page">
+            <div class="page_news">
+                <div class="page_news_date">
+                    <div class="page_news_date_border">
+                        <div class="page_news_date_top">prop it</div>
+                        <div class="page_news_date_day">11</div>
+                        <div class="page_news_date_bottom">drop it</div>
+                    </div>   
+                </div>
+                <div class="page_news_text">
+                    <div class="page_news_text_title"><h1> blah blah blah blah blah blah blah <a>>></a></h1></div>
+                    <div class="page_news_text_author">posted by: <a>blah blah</a> 6 hours, 32 minutes ago in <a>politics</a></div>
+                    <div class="page_news_text_inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores, magni iure maiores nam veritatis rerum vero numquam, sequi asperiores necessitatibus corporis reprehenderit beatae adipisci natus quasi esse in quidem?</div>
+                    <div class="page_news_text_menu"><a>menu</a> | <a>discuss</a> (1) | <a>read full story at blahsite.com</a></div>
+                </div>
+            </div>
+            <div class="page_news">
+                <div class="page_news_date">
+                    <div class="page_news_date_border">
+                        <div class="page_news_date_top">prop it</div>
+                        <div class="page_news_date_day">11</div>
+                        <div class="page_news_date_bottom">drop it</div>
+                    </div>   
+                </div>
+                <div class="page_news_text">
+                    <div class="page_news_text_title"><h1> blah blah blah blah blah blah blah <a>>></a></h1></div>
+                    <div class="page_news_text_author">posted by: <a>blah blah</a> 6 hours, 32 minutes ago in <a>politics</a></div>
+                    <div class="page_news_text_inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores, magni iure maiores nam veritatis rerum vero numquam, sequi asperiores necessitatibus corporis reprehenderit beatae adipisci natus quasi esse in quidem?</div>
+                    <div class="page_news_text_menu"><a>menu</a> | <a>discuss</a> (1) | <a>read full story at blahsite.com</a></div>
+                </div>
+            </div>
+            <div class="page_news">
+                <div class="page_news_date">
+                    <div class="page_news_date_border">
+                        <div class="page_news_date_top">prop it</div>
+                        <div class="page_news_date_day">11</div>
+                        <div class="page_news_date_bottom">drop it</div>
+                    </div>   
+                </div>
+                <div class="page_news_text">
+                    <div class="page_news_text_title"><h1>c-span blah blah blah blah blah blah blah <a>>></a><h1></div>
+                    <div class="page_news_text_author">posted by: <a>blah blah</a> 6 hours, 32 minutes ago in <a>politics</a></div>
+                    <div class="page_news_text_inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores, magni iure maiores nam veritatis rerum vero numquam, sequi asperiores necessitatibus corporis reprehenderit beatae adipisci natus quasi esse in quidem?</div>
+                    <div class="page_news_text_menu"><a>menu</a> | <a>discuss</a> (1) | <a>read full story at blahsite.com</a></div>
+                </div>
+            </div>
+            <div class="page_news">
+                <div class="page_news_date">
+                    <div class="page_news_date_border">
+                        <div class="page_news_date_top">prop it</div>
+                        <div class="page_news_date_day">11</div>
+                        <div class="page_news_date_bottom">drop it</div>
+                    </div>   
+                </div>
+                <div class="page_news_text">
+                    <div class="page_news_text_title"><h1>c-span blah blah blah blah blah blah blah <a>>></a><h1></div>
+                    <div class="page_news_text_author">posted by: <a>blah blah</a> 6 hours, 32 minutes ago in <a>politics</a></div>
+                    <div class="page_news_text_inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores, magni iure maiores nam veritatis rerum vero numquam, sequi asperiores necessitatibus corporis reprehenderit beatae adipisci natus quasi esse in quidem?</div>
+                    <div class="page_news_text_menu"><a>menu</a> | <a>discuss</a> (1) | <a>read full story at blahsite.com</a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>&copy</footer>
 </body>
 </html>
