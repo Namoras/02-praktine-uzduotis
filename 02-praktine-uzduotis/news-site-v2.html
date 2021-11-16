@@ -23,6 +23,7 @@
         .page_info {
             background-color: blue;
             color: white;
+            display: table-row;
             width: 100%;
         }
         .page_info_web {
@@ -31,7 +32,8 @@
             text-align: left;
             font-size: 13px;
             text-transform: capitalize;
-            width: 33%;
+            width: 20%;
+            
         }
         .page_info_name {
             display: table-cell;
@@ -39,18 +41,18 @@
             text-transform: uppercase;
             font-weight: bold;
             text-align: center;
-            width: 33%;
+            width: 60%;
         }
         .page_info_price {
             display: table-cell;
             font-size: 15px;
             text-align: right;
             font-weight: bold;
-            width: 33%;
+            width: 40%;
         }
         .page_news {
             display: table;
-            width: 100%;
+            max-width: 100%;
         }
         .page_news_images {
             width: 33%;
@@ -60,23 +62,37 @@
         .page_news_images_1 {
             background-color: none;
         }
-        .page_news_images_2 { 
+        .page_news_images_2 {
             background-color: none;
+        }
+        .page_news_texts {
+            margin: 0px;
+        }
+        h3 {
+            color: red;
         }
         .page_news_text1 {
             width: 33%;
             display: table-cell;
-            padding: 7px;
+            padding: 5px;
+            text-align: justify;
+            vertical-align: top;
+
         }
         .page_news_text2 {
             width: 33%;
             display: table-cell;
             padding: 7px;
+            text-align: justify;
+            vertical-align: top;
         }
         footer {
             background-color: blue;
             color: white;
             text-align: center;
+        }
+        p {
+            margin: 0px;
         }
     </style>
 </head>
@@ -85,27 +101,28 @@
     <header>
         <div class="page_title">The Daily News</div>
             <div class="page_info">
-                <div class="page_info_web">myloremnews.com</div>
-                <div class="page_info_name">lorem daily news</div>
-                <div class="page_info_price">2.00EUR</div>
+                <div class="page_info_web"><p>mynewspage.com</p></div>
+                <div class="page_info_name"><p>lorem daily news</p></div>
+                <div class="page_info_price"><p>2.00EUR</p></div>
             </div>
             <div class="page_news">
                 <div class="page_news_images">
                     <div class="page_news_images_1"><img src="https://image.shutterstock.com/image-photo/black-white-silhouette-unknown-young-260nw-765366529.jpg" alt="anonymous"></div>
                     <div class="page_news_images_2"><img src="https://www.pngall.com/wp-content/uploads/2018/04/Coupon.png" alt="coupon"></div>
                 </div>
-                <div>
-                    <div class="page_news_text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia
-                    maxime sapiente amet, expedita dolor similique sunt sed ab saepe, numquam cupiditate quod rem
-                    deleniti optio. Dolores, laudantium? Expedita, consectetur! Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Commodi ratione ipsum sequi consectetur delectus ea ut sit pariatur, ullam,
-                    eveniet itaque recusandae. Tempora fuga illo eaque libero odit, dicta culpa.</div>
-                     <div class="page_news_text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                    accusamus qui quod soluta temporibus, ducimus non beatae esse quidem sit! Magni, accusamus iste.
-                    Magni architecto perspiciatis, voluptates eaque adipisci ab. Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Doloribus dolorum, voluptas, sed a repudiandae totam adipisci eos, corporis
-                    delectus veritatis odio ipsum consequuntur perferendis quae qui autem! Cum, deserunt similique.</div>
-                </div>
+                    <div class="page_news_text1"><h3>Lorem ipsum dolor -</h3><p> sit amet consectetur adipisicing elit. Quos officia
+                        maxime sapiente amet, expedita dolor similique sunt sed ab saepe, numquam cupiditate quod rem
+                        deleniti optio. Dolores, laudantium? Expedita, consectetur! Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Commodi ratione ipsum sequi consectetur delectus ea ut sit pariatur, ullam,
+                        eveniet itaque recusandae. Tempora fuga illo eaque libero odit, dicta culpa.</p>
+                    </div>
+                     <div class="page_news_text2"><h3> ipsum dolor sit amet -</h3><p> consectetur adipisicing elit. Obcaecati
+                        accusamus qui quod soluta temporibus, ducimus non beatae esse quidem sit! Magni, accusamus iste.
+                        Magni architecto perspiciatis, voluptates eaque adipisci ab. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Doloribus dolorum, voluptas, sed a repudiandae totam adipisci eos, corporis
+                        delectus veritatis odio ipsum consequuntur perferendis quae qui autem! Cum, deserunt similique.</p>
+                    </div>
+
             </div>
     </header>
     <main>
