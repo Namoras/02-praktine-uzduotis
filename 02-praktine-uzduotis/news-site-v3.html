@@ -49,44 +49,56 @@
         .top_button:hover, .top_button:active {
             background-color: red;
         }
-        .page { border: 1px solid black;
+        .page {
             display: table;
         }
-        .page_news { border: 1px solid black;
+        .page_news {
             display: inline-block;
         }
-        .page_news_date { border: 1px solid black;
-            display: table-cell;
+        .page_news:nth-child(even) {
+            background-color:lightgrey;
         }
-        .page_news_date_border { border: 1px solid black;
-            display: table;
+        .page_news_date {
+            float: left;
+        }
+        .page_news_date_border {
+            display: inline-block;
             margin: 5px;
+            border-radius: 8px;
         }
-        .page_news_date_top { border: 1px solid black;
-            display: table-row;
+        .page_news_date_top {
+            display: block;
             background-color: red;
+            border-radius: 8px 8px 0px 0px;
+            text-align: center;
+            font-weight: bolder;
         }
-        .page_news_date_day { border: 1px solid black;
-            display: table-row;
+        .page_news_date_day { 
+            display: block;
             color: red;
+            text-align: center;
+            font-weight: bolder;
         }
-        .page_news_date_bottom { border: 1px solid black;
-            display: table-row;
+        .page_news_date_bottom {
+            display: block;
             background-color: grey;
+            border-radius: 0px 0px 8px 8px;
+            text-align: center;
+            font-weight: bolder;
         }
-        .page_news_text { border: 1px solid black;
+        .page_news_text {
             display: table-cell;
         }
-        .page_news_text_title { border: 1px solid black;
+        .page_news_text_title {
             display: inline-block;
         }
-        .page_news_text_author { border: 1px solid black;
+        .page_news_text_author {
             display: inline-block;
         }
-        .page_news_text_inside { border: 1px solid black;
+        .page_news_text_inside {
             display: inline-block;
         }
-        .page_news_text_menu { border: 1px solid black;
+        .page_news_text_menu {
             display: inline-block;
         }
     </style>
