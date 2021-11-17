@@ -10,11 +10,11 @@
             body {
                 background-color: lightyellow;
                 padding: 2%;
-                margin: 0%;
-                color: black
+                margin: 1%;
+                color: black;
+                float: left;
             }
             .logo {
-                background-color: yellow;
                 width: 75px;
                 height: 75px;
             }
@@ -23,27 +23,65 @@
                 text-transform: capitalize;
                 font-weight: bold;
                 border-bottom: 1px solid gray;
-            }
-            table, tr, td {
-                border-collapse: collapse;
-                width: 100%;
-                text-align: justify;
-            }
-            .article-row {
-                background-color: none;
-                border-bottom: 1px solid gray;
+                margin-top: 1%;
             }
             .article {
                 font-weight: bold;
                 text-transform: capitalize;
-                width: 75%;
+                border-bottom: 1px solid gray;
             }
             .date {
                 text-align-last: right;
                 font-style: italic;
+                border-bottom: 1px solid gray;
             }
             footer {
                 background-color: none;
+                margin-top: 1%;
+            }
+            .col-1 {
+                width: 8.33%;
+            }
+            .col-2 {
+                width: 16.66%;
+            }
+            .col-3 {
+                width: 25%;
+            }
+            .col-4 {
+                width: 33.33%;
+            }
+            .col-5 {
+                width: 41.66%;
+            }
+            .col-6 {
+                width: 50%;
+            }
+            .col-7 {
+                width: 58.33%;
+            }
+            .col-8 
+            {width: 66.66%;
+            }
+            .col-9 {
+                width: 75%;
+            }
+            .col-10 {
+                width: 83.33%;
+            }
+            .col-11 {
+                width: 91.66%;
+            }
+            .col-12 {
+                width: 100%;
+            }
+            main::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            [class*="col-"] {
+                float: left;
             }
         </style>
     </head>
@@ -53,48 +91,50 @@
             <a href="">
                 <img class="logo" src="images/Logo.png" alt="logo">
             </a>
-            <div class="title">title</div>
+            <div class="title col-12">title</div>
         </header>
-        <table class="table">
-            <tr class="article-row">
-                <td class="article">article</td>
-                <td class="date">2000-05-16</td>
-            </tr>
-            <tr class="text">
-                <td colspan="2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum iusto omnis ea saepe eum
+        <main>
+            <div class="container">
+                <div class="article col-10">article</div>
+                <div class="date col-2">2000-05-16</div>
+            </div>
+            <div class="container">
+                <div class="col-12">Lore ipsum dolor, sit amet consectetur adipisicing elit. Nosdivum iusto omnis ea saepe eum
                     commodi nam aliquam ipsa aut! Voluptate impedit totam sint dolorum mollitia itaque assumenda velit
                     consequuntur voluptatem. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
                     ipsum lorem
                     ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                    lorem ipsum</td>
-            </tr>
-            <tr class="article-row">
-                <td class="article">article</td>
-                <td class="date">2000-05-03</td>
-            </tr>
-            <tr class="text">
-                <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed enim ipsum illo earum est?
+                    lorem ipsum</div>
+            </div>
+            <div class="container">
+                <div class="article col-10">article</div>
+                <div class="date col-2">2000-05-03</div>
+            </div>
+            <div class="container">
+                <div class="col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed enim ipsum illo earum est?
                     Repellendus dolorum eligendi inventore amet officiis necessitatibus porro sunt ducimus vero, architecto
                     excepturi rem vel quasi! lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
                     ipsum lorem
                     ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                    lorem ipsum</td>
-            </tr>
-            <tr class="article-row">
-                <td class="article">article</td>
-                <td class="date">2000-04-29</td>
-            </tr>
-            <tr class="text">
-                <td colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, officiis corporis
+                    lorem ipsum</div>
+            </div>
+            <div class="container">
+                <div class="article col-10">article</div>
+                <div class="date col-2">2000-04-29</div>
+            </div>
+            <div class="container">
+                <div class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, officiis corporis
                     iure voluptate eos ipsam at architecto recusandae laboriosam ipsum qui unde quas fuga facere pariatur a
                     quod aut illo? lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum loremipsum lorem ipsum lorem
                     ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                    lorem ipsum</td>
-            </tr>
-        </table>
+                    lorem ipsum</div>
+            </div>
+        </main>
     </body>
-    <footer class="footer">
-        Copyright &copy
+    <footer class="container">
+        <div>
+            <div class="col-12"> Copyright &copy</div>
+        </div>
     </footer>
 
 </html>
