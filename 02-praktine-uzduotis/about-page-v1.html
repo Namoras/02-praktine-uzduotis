@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+        .clearfix {
+            overflow: auto;
+        }
+        [class*="col-"] {
+            float: left;
+        }
+        /* .col1-12 */
+        .col-1 {
+            width: 8.33%;
+            height: auto;
+        }
+        .col-2 {
+            width: 16.6%;
+            height: auto;
+        }
+        .col-3 {
+            width: 25%;
+            height: auto;
+        }
+        .col-4 {
+            width: 33.33%;
+            height: auto;
+        }
+        .col-5 {
+            width: 41.66%;
+            height: auto;
+        }
+        .col-6 {
+            width: 50%;
+            height: auto;
+        }
+        .col-7 {
+            width: 58.33%;
+            height: auto;
+        }
+        .col-8 {
+            width: 66.66%;
+            height: auto;
+        }
+        .col-9 {
+            width: 75%;
+            height: auto;
+        }
+        .col-10 {
+            width: 83.33%;
+            height: auto;
+        }
+        .col-11 {
+            width: 91.66%;
+            height: auto;
+        }
+        .col-12 {
+            width: 100%;
+            height: auto;
+        }
+        main::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        body {
+            background-color: white;
+            color: black;
+        }
+        .pg_text_title {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .pg_text_intro {
+            font-size: 1.6rem;
+            color: grey;
+        }
+        .pg_text_text, .pg_text_text2{
+            color: grey;
+            font-size: 1rem;
+        }
+        .pg_text_buttons_fb {
+            margin: 0.1em;
+
+        }
+        .pg_text_buttons_twet {
+            margin: 0.3em;
+        }
+        [class*="img_bar_"] {
+            padding: 0.3em;
+            margin: 0.3em;
+            border: 1px lightgray solid;
+            width: 19%;
+        }
+        /* for mobile */
+        @media only screen and (max-width: 600px) {
+            body {
+                float: left;
+            }
+            [class*="col-"] {
+                width: 100%;
+            }
+            .pg_text_buttons {
+                width: 25%;
+                margin-top: 1%;
+            }
+            [class*="img_bar_"] {
+                width: 90%;
+            }
+        }
+        /* for PC */
+        @media only screen and (min-width: 600px) {
+            body {
+                float: left;
+            }
+            [class*="img_bar_"] {
+                width: 14.5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="pg">
+            <div class="pg_text col-6">
+                <div class="pg_text_title">about me</div>
+                <div class="pg_text_intro">I'm a ui designer based in sunny Sydney, Australia.</div>
+                <div class="pg_text_text">I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not pushing pixels, you'll find me cooking, gardening or working out in the park.</div>
+                <div class="pg_text_text2">When I'm not coding or pushing pixels,you'll find me in the gym or on the court shooting some hoops.</div> 
+                <div class="pg_text_buttons col-12">
+                    <div class="pg_text_buttons_fb col-4"><img src="https://icon-library.com/images/facebook-share-icon-png/facebook-share-icon-png-25.jpg" alt="like"></div>
+                    <div class="pg_text_buttons_twet col-5"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlom4Mobsetji04Vh548cuDNiap3NtsNWxyKaedPHvlDLASqrQTA8paM3SV_cEAQnz5A&usqp=CAU" alt="follow"></div>
+                </div>
+            </div>
+            <div class="pg_img col-6">
+                <img src="https://www.adhamdannaway.com/wp-content/themes/dannaway/images/about-adham-dannaway.jpg"></img>
+            </div>
+        </div>
+        <div class="img_bar col-12">
+            <div class="img_bar_1 col-2"><img src="https://www.adhamdannaway.com/wp-content/themes/dannaway/images/toddler.jpg" alt="toddler"></div>
+            <div class="img_bar_2 col-2"><img src="https://www.adhamdannaway.com/wp-content/themes/dannaway/images/sydney.jpg" alt="sydney"></div>
+            <div class="img_bar_3 col-2"><img src="https://www.adhamdannaway.com/wp-content/themes/dannaway/images/home.jpg" alt="home"></div>
+            <div class="img_bar_4 col-2"><img src="https://www.adhamdannaway.com/wp-content/themes/dannaway/images/workspace.jpg" alt="workspace"></div>
+            <div class="img_bar_5 col-2"><img src="https://www.adhamdannaway.com/wp-content/themes/dannaway/images/l-sit-pullup.jpg" alt="pullup"></div>
+            <div class="img_bar_6 col-2"><img src="https://www.adhamdannaway.com/wp-content/themes/dannaway/images/interior-design.jpg" alt="design"></div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
