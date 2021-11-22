@@ -9,11 +9,16 @@
         html {
             font-size: 16px;
         }
-        .clearfix {
-            overflow: auto;
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
         }
         [class*="col-"] {
             float: left;
+        }
+        img {
+            width: 100%;
         }
         /* .col1-12 */
         .col-1 {
@@ -74,7 +79,7 @@
             color: black;
         }
         .pg_text_title {
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: bold;
         }
         .pg_text_intro {
@@ -84,6 +89,9 @@
         .pg_text_text, .pg_text_text2{
             color: grey;
             font-size: 1rem;
+        }
+        img {
+            width: 100%;
         }
         .pg_text_buttons_fb {
             margin: 0.1em;
