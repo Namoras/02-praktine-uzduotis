@@ -8,7 +8,11 @@
     <style>
         * {
             margin: 0rem;
-            padding: 0rem
+            padding: 0rem;
+        }
+        img {
+            width: 100%;
+            height: auto;
         }
         /* page style */
         .container {
@@ -19,9 +23,16 @@
             flex-direction: column;
             width: 40%;
         }
-
+        body {
+            background-image: linear-gradient(rgb(223, 223, 223), rgb(255, 255, 255));
+            height: 5rem;
+            background-repeat: no-repeat;
+        }
         /* for mobile */
         @media only screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
         }
         /* for mobile */
         @media only screen and (min-width: 600px) {
@@ -34,66 +45,80 @@
     <main class="container">
     <!-- Page content -->
         <div class="content">
-            <div>Meet bladvsd sadnjsndan dsd</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, libero enim maiores minus
+            <div>
+                <p>Meet  the HBCWeb Team</p>
+            </div>
+            <div>
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Rem, libero enim maiores minus
                  natus modi. Amet molestiae velit sed necessitatibus sapiente quia eum quasi ratione?
-                 Fugit reprehenderit dolorem molestias facere!</div>
+                 Fugit reprehenderit dolorem molestias facere!</p>
+            </div>
             <div class="content_member container">
                 <div class="content_member_image container"><img src="https://www.w3schools.com/images/w3lynx_200.png" alt="image"></div>
                 <div class="content_member_about">
-                    <div class="content_member_about_name container">NAme and positionbdfbdfb</div>
-                    <div class="content_member_about_text container">about Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                         Eaque nemo et, odio perspiciatis, dolorum sit animi enim quaerat
-                          tempora laborum ea doloribus aliquid voluptatem libero quidem fuga.
-                           Laborum, ex labore.</div>
+                    <div class="content_member_about_name container">rob carling - development manager</div>
+                    <div class="content_member_about_text container">
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Eaque nemo et, odio perspiciatis,<a href="">portfolio</a> dolorum sit animi enim quaerat
+                          tempora laborum ea doloribus aliquid, libero quidem fuga.
+                        Laborum, ex labore.</p>
+                    </div>
                 </div>
             </div>
             <div class="content_member container">
                 <div class="content_member_image container"><img src="https://www.w3schools.com/images/w3lynx_200.png" alt="image"></div>
                 <div class="content_member_about">
-                    <div class="content_member_about_name container">NAme and position</div>
-                    <div class="content_member_about_text container">about Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                         Eaque nemo et, odio perspiciatis, dolorum sit animi enim quaerat
-                          tempora laborum ea doloribus aliquid voluptatem libero quidem fuga.
-                           Laborum, ex labore.</div>
+                    <div class="content_member_about_name container">dustin green - lead developer</div>
+                    <div class="content_member_about_text container">
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Eaque nemo et, odio perspiciatis, portfolio dolorum sit animi enim quaerat
+                          tempora laborum ea doloribus aliquid, libero quidem fuga.
+                        Laborum, ex labore.</p>
+                    </div>
                 </div>
             </div>
             <div class="content_member container">
                 <div class="content_member_image container"><img src="https://www.w3schools.com/images/w3lynx_200.png" alt="image"></div>
                 <div class="content_member_about">
-                    <div class="content_member_about_name container">NAme and position</div>
-                    <div class="content_member_about_text container">about Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                         Eaque nemo et, odio perspiciatis, dolorum sit animi enim quaerat
-                          tempora laborum ea doloribus aliquid voluptatem libero quidem fuga.
-                           Laborum, ex labore.</div>
+                    <div class="content_member_about_name container">glenn generao -graphic designer</div>
+                    <div class="content_member_about_text container">
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Eaque nemo et, odio perspiciatis, portfolio dolorum sit animi enim quaerat
+                          tempora laborum ea doloribus aliquid, libero quidem fuga.
+                        Laborum, ex labore.</p>
+                    </div>
                 </div>
             </div>
             <div class="content_member container">
                 <div class="content_member_image container"><img src="https://www.w3schools.com/images/w3lynx_200.png" alt="image"></div>
                 <div class="content_member_about">
-                    <div class="content_member_about_name container">NAme and position</div>
-                    <div class="content_member_about_text container">about Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                         Eaque nemo et, odio perspiciatis, dolorum sit animi enim quaerat
-                          tempora laborum ea doloribus aliquid voluptatem libero quidem fuga.
-                           Laborum, ex labore.</div>
+                    <div class="content_member_about_name container">wes sayas - lead programmer</div>
+                    <div class="content_member_about_text container">
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Eaque nemo et, odio perspiciatis, portfolio dolorum sit animi enim quaerat
+                          tempora laborum ea doloribus aliquid, libero quidem fuga.
+                        Laborum, ex labore.</p>
+                    </div>
                 </div>
             </div>
         </div>
     <!-- The sidebar -->
         <div class="sidebar container">
             <div>
-                <div>menu text</div>
-                <div>button</div>
-                <div>button</div>
-                <div>button</div>
-                <div>button</div>
-                <div>button</div>
+                <div>More About HBCWeb...</div>
+                <div><a href="">Company Overview</a></div>
+                <div><a href="">Meet the Team</a></div>
+                <div><a href="">The Digs</a></div>
+                <div><a href="">The Priceline PN</a></div>
+                <div><a href="">Client Testimonials</a></div>
             </div>
-            <div>bhjbhbkjn</div>
-            <div>IN CLOUD Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque facere
+            <div>What our clients are saying.</div>
+            <div>
+                <p> IN CLOUD Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque facere
                 possimus nemo nihil reiciendis fugiat optio, inventore, corrupti, aperiam
-                totam magnam officiis harum modi placeat sit eveniet animi quia minima.</div>
-            <div>Testimonials</div>
+                totam magnam officiis harum modi placeat sit eveniet animi quia minima.</p>
+            </div>
+            <div><a href="">view all clients testimonials</a></div>
         </div>
     </main>
     <footer></footer>
