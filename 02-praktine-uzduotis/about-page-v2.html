@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me_V2</title>
+    <style>
+        * {
+            margin: 0rem;
+            padding: 0rem
+        }
+        html {
+            font-size: 16px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        [class*="col-"] {
+            float: left;
+        }
+        img {
+            width: 100%;
+        }
+        /* background */
+        body {
+            background-size: 12px 12px;
+            background-image:
+            linear-gradient(to right, rgb(233, 233, 233) 1px, transparent 1px),
+            linear-gradient(to bottom, rgb(233, 233, 233) 1px, transparent 1px);
+        }
+        /* .col1-12 */
+        .col-1 {
+            width: 8.33%;
+            height: auto;
+        }
+        .col-2 {
+            width: 16%;
+            height: auto;
+        }
+        .col-3 {
+            width: 25%;
+            height: auto;
+        }
+        .col-4 {
+            width: 33.33%;
+            height: auto;
+        }
+        .col-5 {
+            width: 41.66%;
+            height: auto;
+        }
+        .col-6 {
+            width: 50%;
+            height: auto;
+        }
+        .col-7 {
+            width: 58.33%;
+            height: auto;
+        }
+        .col-8 {
+            width: 66.66%;
+            height: auto;
+        }
+        .col-9 {
+            width: 75%;
+            height: auto;
+        }
+        .col-10 {
+            width: 83.33%;
+            height: auto;
+        }
+        .col-11 {
+            width: 91.66%;
+            height: auto;
+        }
+        .col-12 {
+            width: 100%;
+            height: auto;
+        }
+        main::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        /* page style */
+        body {
+            margin: 0rem;
+            padding: 2rem;
+        }
+        .pg_text{
+            padding: 1em;
+            color: rgb(95, 95, 95);
+        }
+        .pg_text_intro {
+            font-size: 2.5em;
+            font-style: unset;
+        }
+        .pg_text_webelieve {
+            font-size: 1.2em;
+            margin-top: 1%;
+            font-style: unset;
+        }
+        .pg_team_member {
+            width: 19%;
+            color: rgb(95, 95, 95);
+            text-align: center;
+        }
+        .pg_team_member_img {
+            border: 1px solid rgb(204, 204, 204);
+            padding: 0.3rem;
+            margin: 0.3rem;
+        }
+        .pg_team_member_name {
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            padding-top: 0.5rem;
+        }
+        .pg_team_member_position {
+            font-size: 1rem;
+            text-transform: capitalize;
+            font-weight: bolder;
+            padding-top: 0.3rem;
+        }
+        .pg_team_member_mail {
+            font-size: 0.8rem;
+            padding-top: 0.3rem;
+        }
+        /* for mobile */
+        @media only screen and (max-width: 600px) {
+            [class*="col-"] {
+            width: 100%;
+        }
+        body {
+            text-align: center;
+        }
+        .pg_text_intro {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        .pg_text_webelieve{
+            font-size: 1em;
+            margin-bottom: 0.5em;
+        }
+        .pg_team_member {
+            margin-bottom: 1.5em;
+        }
+        img {
+            width: 60%;
+            height: auto;
+        }
+        .pg_team_member_img {
+            border: none;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="pg col-12" >
+            <div class="pg_text col-12" >
+                <div class="pg_text_intro col-8">We do everything with our core values of <b>honesty</b>,
+                    hard <b>work</b>, and <b>trust</b>.</div>
+                <div class="col-1"> </div>
+                <div class="pg_text_webelieve col-3"><b>We believe these characteristics</b> influence 
+                    everything we doin business and in life. We sincerely enjoy the work we do, and our 
+                    clients get to reap the benefits.</div>
+            </div>
+            <div class="pg_team col-12">
+                <div class="pg_team_member col-">
+                    <div class="pg_team_member_img"> <img src="https://scontent.fvno7-1.fna.fbcdn.net/v/t1.15752-9/259640498_328246902029568_1058287511508111481_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_ohc=0YnCqDWxVT4AX-iFcr1&_nc_ht=scontent.fvno7-1.fna&oh=112b7d96f83a3399a49296a7efbf3964&oe=61C4069C" alt="eric"></div>
+                    <div class="pg_team_member_name">eric downs</div>
+                    <div class="pg_team_member_position">creative director</div>
+                    <div class="pg_team_member_mail">eric@grainandmortar.com</div>
+                </div>
+                <div class="pg_team_member col-">
+                    <div class="pg_team_member_img"><img src="https://scontent.fvno7-1.fna.fbcdn.net/v/t1.15752-9/259612264_963070781297357_1543136410642990090_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_ohc=uvksvHFA6B8AX_xtMgu&_nc_ht=scontent.fvno7-1.fna&oh=985d8b2f5dead4202609f6a3b92bb490&oe=61C20311" alt="mike"></div>
+                    <div class="pg_team_member_name">mike dekay</div>
+                    <div class="pg_team_member_position">creative director</div>
+                    <div class="pg_team_member_mail">mike@grainandmortar.com</div>
+                </div>
+                <div class="pg_team_member col-">
+                    <div class="pg_team_member_img"><img src="https://scontent.fvno7-1.fna.fbcdn.net/v/t1.15752-9/259301492_323683026288864_8634675888346528220_n.png?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_ohc=MSzM4Lq5WSoAX_uJywX&_nc_ht=scontent.fvno7-1.fna&oh=9221f8bbf40efd7097c2f5b62fc3e471&oe=61C22BAE" alt="kristin"></div>
+                    <div class="pg_team_member_name"> kristin dekay</div>
+                    <div class="pg_team_member_position">operations director</div>
+                    <div class="pg_team_member_mail">kristin@grainandmortar.com</div>
+                </div>
+                <div class="pg_team_member col-">
+                    <div class="pg_team_member_img"><img src="https://scontent.fvno7-1.fna.fbcdn.net/v/t1.15752-9/259555310_223590203106870_7058405508384481509_n.png?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Ox4vSVvx77MAX8qw4pf&_nc_ht=scontent.fvno7-1.fna&oh=1ea1aec658b02017eee610bce684c9b9&oe=61C3E9ED" alt="miranda"></div>
+                    <div class="pg_team_member_name">miranda bouck</div>
+                    <div class="pg_team_member_position">designer</div>
+                    <div class="pg_team_member_mail">miranda@grainandmortar.com</div>
+                </div>
+                <div class="pg_team_member col-">
+                    <div class="pg_team_member_img"><img src="https://scontent.fvno7-1.fna.fbcdn.net/v/t1.15752-9/259589054_189974563243828_8880302705156429296_n.png?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_ohc=VcrHMfHXKIcAX9anpbw&_nc_ht=scontent.fvno7-1.fna&oh=e6fdb0cee9e458fd0500388c166762a3&oe=61C192A3" alt="jesse"></div>
+                    <div class="pg_team_member_name">jesse harding</div>
+                    <div class="pg_team_member_position">designer</div>
+                    <div class="pg_team_member_mail">jesse@grainandmortar.com</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
