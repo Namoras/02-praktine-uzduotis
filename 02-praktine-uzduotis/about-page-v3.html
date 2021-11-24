@@ -14,6 +14,12 @@
             width: 100%;
             height: auto;
         }
+        /* background */
+        body {
+            background-image: linear-gradient(rgb(223, 223, 223), rgb(255, 255, 255));
+            height: 5rem;
+            background-repeat: no-repeat;
+        }
         /* page style */
         .container {
             display: flex;
@@ -23,11 +29,10 @@
             flex-direction: column;
             width: 40%;
         }
-        /* background */
-        body {
-            background-image: linear-gradient(rgb(223, 223, 223), rgb(255, 255, 255));
-            height: 5rem;
-            background-repeat: no-repeat;
+        .content_title {
+            color: rgb(0, 106, 114);
+            font-size: 2em;
+            font-weight: bold;
         }
         /* for mobile */
         @media only screen and (max-width: 600px) {
@@ -46,10 +51,10 @@
     <main class="container">
     <!-- Page content -->
         <div class="content">
-            <div>
+            <div class="content_title">
                 <p>Meet  the HBCWeb Team</p>
             </div>
-            <div>
+            <div class="content_text">
                 <p>ipsum dolor sit amet consectetur adipisicing elit. Rem, libero enim maiores minus
                  natus modi. Amet molestiae velit sed necessitatibus sapiente quia eum quasi ratione?
                  Fugit reprehenderit dolorem molestias facere!</p>
