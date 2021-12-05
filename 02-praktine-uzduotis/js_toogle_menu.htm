@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Show/Hide button</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script defer>
+	function show() {
+	var x = document.getElementById("links");
+	if (x.style.display === "none") {
+	x.style.display = "block";
+	let elem = document.getElementById ('show').innerHTML = "Hide";
+	} else {
+	x.style.display = "none"; 
+	let elem = document.getElementById ('show').innerHTML = "Show";
+	}
+	}
+	</script>
+	<button onclick="show()" id="show">Hide</button>
+
+	<div id="links">
+		<div><a href="https://www.w3schools.com/js/default.asp">link1</a></div>
+		<div><a href="https://www.w3schools.com/js/js_intro.asp">link2</a></div>
+		<div><a href="https://www.w3schools.com/js/js_intro.asp">link3</a></div>
+		<div><a href="https://www.w3schools.com/js/js_intro.asp">link4</a></div>
+		<div><a href="https://www.w3schools.com/js/js_intro.asp">link5</a></div>
+		<div><a href="https://www.w3schools.com/js/js_intro.asp">link6</a></div>
+		<div><a href="https://www.w3schools.com/js/js_intro.asp">link7</a></div>
+	</div>
+</body>
+</html>
