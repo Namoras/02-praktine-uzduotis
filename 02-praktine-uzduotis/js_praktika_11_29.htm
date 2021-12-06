@@ -9,7 +9,7 @@
 </head>
 <body id="body">
 	<script>
-    //Positive - Negative number
+    //1.Positive - Negative number
     /*let x = 2
         if(x >= 1) {
             console.log(true);
@@ -18,7 +18,7 @@
             console.log(false);
         }	
 	
-    //School boy crosing road - what he should do?//
+    //2.School boy crosing road - what he should do?//
 	/*let x = 1 //1 - green light 2 -yellow 3 - red
         if(x == 1) {
             console.log('go');
@@ -27,7 +27,7 @@
             console.log('wait');
         }	
 		
-    //will books fit in boxes? d-boxes k-books n-box fits books
+    //3.will books fit in boxes? d-boxes k-books n-box fits books
 	/*let d = 2;
 	let k = 8;
 	let n = 5;
@@ -38,7 +38,7 @@
             console.log('Books will not fit');
         }
 
-    //numbers which looks same from both sides are called polindromes - check if number x is polindrome
+    //4.numbers which looks same from both sides are called polindromes - check if number x is polindrome
     /*let x = 1223
         if(Math.floor(x / 1000) == x % 10 && Math.floor(x / 100 % 10) ==Math.floor(x % 100 / 10)) {
             console.log('Number is polindrome');
@@ -47,7 +47,7 @@
             console.log('Number is not a polindrome');
             }
 
-	//did my ticket win?
+	//5.did my ticket win?
 	/*var value = 222442,
     sum = 0;
 
@@ -62,7 +62,7 @@
         console.log('try next time')
         }
 
-	//366 or 365 days in year?
+	//6.366 or 365 days in year?
 	/*let y = 1601
         if (y / 400 % 1 == 0) {
         console.log('leap year');
@@ -77,7 +77,7 @@
         console.log('ordinary year');
         }
 
-	//numbers which looks same from both sides are called polindromes - check if number x is polindrome
+	//8.numbers which looks same from both sides are called polindromes - check if number x is polindrome
 	/*let x = 13731
 	    if(Math.floor(x / 10000) == x % 10 && Math.floor(x / 1000 % 10) ==Math.floor(x % 100 / 10)) {
 		    console.log('Number is polindrome');
@@ -113,8 +113,112 @@
 			else if (inputVal < 1){
 			alert('try another number');
 			}
-		}
-
+		}*/
+    //9.//Geriausias pazimys
+    /*let p1 = 5;
+	let p2 = 8;
+	let p3 = 9;
+        if(p1 && p2 < p3) {
+            console.log('trecias');
+        }
+        else if (p2 && p3 < p1) {
+            console.log('pirmas');
+        }
+        else {
+            console.log('antras');
+        }*/
+    //10. days in month.
+    /*let getDaysInMonth = function(month,year) {
+        return new Date(year, month, 0).getDate();
+            };
+        console.log(getDaysInMonth(2, 2016));
+        */
+    //11. late or not?
+    /*let v1 = 8;
+    let v = 9;
+    let m = 5;
+    let m1 = 29;
+    let m2 = 23;
+        if (((v * 60) + m) - m2 >= ((v1 * 60 ) + m1)) {
+            console.log('petras i mokykla neveluos');
+        }
+        else {
+            console.log ('petras i mokykla veluos');
+        }
+        */
+    //12. degtuku trikampis     SUTVARKYTI
+    /*let n = 6;
+        if (n % 3 == 0) {
+            console.log('trikampi sudelioti galima');
+        }
+        else {
+            console.log('trikampi sudelioti negalima');
+        }
+        */
+    //13. olimpiniai metai
+    /*let m = 1983;
+    let x = 1892;
+    let n = (m-x)/4
+        if (n % 1 == 0) {
+            console.log (n);
+        }
+        else {
+            console.log ('neolimpiniai');
+        }
+        */
+    //14. ax2+bx+c=0 kof a.b.c zinomi 
+    /*let root1, root2;
+    let a = 1;
+    let b = 4;
+    let c = 3;
+    let discriminant = b * b - 4 * a * c;
+    if (discriminant > 0) {
+        root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+        root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+        console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
+    }
+    else if (discriminant == 0) {
+        root1 = root2 = -b / (2 * a);
+        console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
+    }
+    else {
+    let realPart = (-b / (2 * a)).toFixed(2);
+    let imagPart = (Math.sqrt(-discriminant) / (2 * a)).toFixed(2);
+        console.log(
+        `The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i`
+        );
+    }
+    */
+   //15. ledai
+   /*let c = 70;
+   let p = 20;
+   let x = Math.floor(c / p)
+    if (c >= p) {
+    console.log ('Saulius nusipirks ' + x + ' porcijas ledu, ir jam liks ' + (c % p) + ' centu');
+    }
+    else {
+        console.log ('pinigu neuzteks')
+    }
+    */
+   //16. prekes is sandelio
+   /*let n = 100;
+   let m = 14;
+   let k = n / m;
+   console.log ('tures nuvaziuoti ' + Math.ceil(k) + ' kartus')
+   */
+    //17. a ir b pamazinti ir padidinti
+    /*let a = 100;
+    let b = 4;
+    function add() {
+        if (a > b){
+            console.log(a--, b++)
+        }
+        else {
+            console.log(a++, b--)
+        }
+        }
+        */
 	</script>
+    <!-- <button onclick="add()" id="add">add</button> -->
 </body>
 </html>
