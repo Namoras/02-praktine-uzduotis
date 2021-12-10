@@ -3,57 +3,105 @@
 <body>
     <script>
     //1 - atspausdinti 5 eilutes labas
-        /*let text = "";
+/*      let text = "";
         let i = 1;
         while (i < 6) {
         text += "Labas " + i + " ";
         i++;
         }
-        console.log (text);*/
-    
+        console.log (text);
+*/
     //2 - 01234 skirtingose eilutese
-        /*let i = 0;
+/*      let i = 0;
         while(i < 5) {
         console.log(i);
         i++;
-        }*/
-
+        }
+*/
     //3 - 0,10,20,30,40 ----
-        /*let i = 10;
+/*      let i = 10;
         for (let i = 0; i <= 40; i += 10) {
             console.log(i);
-        }*/
-
+        }
+*/
     //4 - 49,50,51,52,53
-        /*let i = 0;
+/*      let i = 0;
         for (let i = 0; i<=53; i++) {
             if (i >= 49)
             console.log(i)
-        }*/
-
+        }
+*/
     //5 - 4,3,2,1,0
-        /*var arr = [0, 1, 2, 3, 4];
+/*      var arr = [0, 1, 2, 3, 4];<!--
             for (var i = arr.length - 1; i >= 0; i--) {
             console.log(arr[i]);
-            }*/
-
+            }
+*/
     //6 - from 0 to 10 - 5 random numbers                
-        /*for(let i=2; i<=10; i=i+2) {
+/*      for(let i=2; i<=10; i=i+2) {
             console.log (Math.floor(Math.random()*11))
-        }*/
-    
-    //7 -random 5 numbers ends with number 5 
-        
-        while(i = 0) {
-            if(i !== 5);
         }
-            console.log (Math.floor(Math.random()));
+*/
+    //7 -random 5 numbers ends with number 5 
+/*     for (var i = 0; i < 100; i++) {
+            var count = 0;
+            for (var j = 0; j < Math.floor(Math.random() * 10); j++) {
+                count++;
+            }
+        console.log(count); {
+            if (count === 5) { break; } 
+        }
+    }
+*/
+    //9.
+/*    for (var i = 0; i < 20; i++) {
+        var count = 0;
+        for (var j = 0; j < Math.floor(Math.random() * 20); j++) {
+        count++;
+    }
+    console.log(count); {
+            if (count === 5) {break; }
+            if (count === 7) {break; } 
+        }
+    }
+*/
+    //8. 
+/*    let sum = 0;
+        for (let sum = 0; sum <= 110; sum += Math.floor(Math.random() * 11)) {
+            console.log(sum); { 
+                if (sum >= 100) { break; }
+            }
+        }
+*/
+    //16.
+/*  let n = 1233;
+    let sum = 0;
+    while (n) {
+        sum += n %10;
+        n = Math.floor(n / 10);
+    }
+    console.log(sum);
+*/
+    //11.
+/*
+    var invest = 100;
+    var paluk = 0.02;
+    var metu = 10;
+    var text = "";
+    for (var i=1; i <= metu ; i++) {
+         text += 'Indelininkas per ' + i + ' metu gaus ' + (invest * (i * paluk)) + ' euru(-us) palukanu investaves ' + invest + ' euru. ';
+    }
+    console.log (text);
+*/
+    //12.
+    var n = 10;
+        for (var n = 10; n <= 99; n += 1) {
+            console.log(n);
+        var x = n
+        console.log(((x % 10)*10 + Math.floor(x / 10))); 
+}
 
 
-
-        
-    
-</script>
-
+    </script>
 </body>
 </html>
