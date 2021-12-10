@@ -3,32 +3,102 @@
   <head>
 	<title>Javascript</title>
 	<meta charset="utf-8">
+  <script>
+    function myOutput() {
+      return document.getElementById("output")
+    }
+    function myText() {
+      var a = document.getElementById("content").value;
+      myOutput().innerHTML ="" + a;
+    }
+    function myTextFontBold() {
+      myOutput().style.fontWeight = "bold";
+    }
+    function myTextFontItalic() {
+      myOutput().style.fontStyle = "italic";
+    }
+    function myTextDecor() {
+      myOutput().style.textDecoration = "underline";
+    }
+    function myTextAlignL() {
+      myOutput().style.textAlign = "left";
+    }
+    function myTextAlignM() {
+      myOutput().style.textAlign = "center";
+    }
+    function myTextAlignR() {
+      myOutput().style.textAlign = "right";
+    }
+    function myTextVerticalT() {
+      myOutput().style.verticalAlign = "top";
+    }
+    function myTextVerticalM() {
+      myOutput().style.verticalAlign = "middle";
+    }
+    function myTextVerticalB() {
+      myOutput().style.verticalAlign = "bottom";
+    }
+
+  </script>
 </head>
 <body>
   <label for="content">Content: </label>
-  <input type="text" id="content" name="content" value="Your text"><br>
+  <input type="text" id="content" name="content" value="Your text" oninput="myText()"><br>
   
-  <label for="size">Size: </label>
-  <input type="size" id="size" name="size" value="10">
-  
+  <label for="text-size">Size: </label>
+  <input type="number" id="text-size" name="size" min="1" max="50" value="10">
   <label> Style: </label>
-  <input type="checkbox" id="bold" name="bold" value="bold">
+  <input type="checkbox" id="bold" name="font" value="bold" onclick="myTextFontBold()">
   <label for="bold"> Bold</label>
-  <input type="checkbox" id="italic" name="italic" value="italic">
+  <input type="checkbox" id="italic" name="font" value="italic" onclick="myTextFontItalic()">
   <label for="italic"> Italic</label>
-  <input type="checkbox" id="underline" name="underline" value="underline">
+  <input type="checkbox" id="underline" name="font" value="underline" onclick="myTextDecor()">
   <label for="underline"> Underline</label>
   <br>
-  
-  <label> Align: </label>
-  <input type="radio" id="left" name="hor_position" value="Left">
-  <label for="left">Left</label>
-  <input type="radio" id="mid" name="hor_position" value="middle">
-  <label for="mid">Middle</label>
-  <input type="radio" id="right" name="hor_position" value="right">
-  <label for="right">Right</label><br>
-  
+
+  <label for="height">Height: </label>
+  <input type="number" id="height" name="height" value="10"> 
+  <label for="width">Width: </label>
+  <input type="number" id="width" name="width" value="10"><br>
   
 
+  
+  <label> Align: </label>
+  <input type="radio" id="aleft" name="hor_position" value="left" onclick="myTextAlignL()">
+  <label for="left">Left</label>
+  <input type="radio" id="amid" name="hor_position" value="middle" onclick="myTextAlignM()">
+  <label for="mid">Middle</label>
+  <input type="radio" id="aright" name="hor_position" value="right" onclick="myTextAlignR()">
+  <label for="right">Right</label>
+  <br>
+
+  <label> Vertical: </label>
+  <input type="radio" id="vtop" name="ver_position" value="top" onclick="myTextVerticalT()">
+  <label for="top">Top</label>
+  <input type="radio" id="vmid" name="ver_position" value="middle" onclick="myTextVerticalM()">
+  <label for="middle">Middle</label>
+  <input type="radio" id="vbot" name="ver_position" value="bottom" onclick="myTextVerticalB()">
+  <label for="bottom">Bottom</label>
+  <br>
+
+  <label> Text Color: </label>
+  <input type="color" id="textcolor" name="textcolor" value="#ffffff">
+  <label> Back Color: </label>
+  <input type="color" id="backcolor" name="backcolor" value="#000000">
+  <label> Border Color: </label>
+  <input type="color" id="bordercolor" name="bordercolor" value="#ff0000">
+  <label> Size: </label>
+  <input type="range" id="somesize" name="somesize" value="20">
+  <br>
+
+  <label> Padding: </label>
+  <input type="range" id="padding" name="padding" value="5">
+  <br>
+
+  <table id="box" style="border: 1px solid black;" height="100px;" width="100px">
+    <tr height="100px;" width="100px">
+     <td style="border: 1px solid black;" id="output"> Your text </td>
+    </tr>
+  </table>
 </body>
 </html>
