@@ -3,22 +3,66 @@
   <head>
 	<title>Javascript</title>
 	<meta charset="utf-8">
+  <style>
+    #box {
+      height: 200px; 
+      width: 200px;
+      border: 1px solid black; 
+      background-color: red; 
+      display:table;
+    }
+    #output {
+      border: 1px solid black; 
+      color:white; 
+      padding: 1px;
+    }
+  </style>
   <script>
     function myOutput() {
       return document.getElementById("output")
+    }
+    function myBox() {
+      return document.getElementById("box")
     }
     function myText() {
       var a = document.getElementById("content").value;
       myOutput().innerHTML ="" + a;
     }
+    function myTextSize() {
+      var x = document.getElementById("textsize").value;
+      myOutput().style.fontSize = x + "px";
+    }
+    function myHeight() {
+      var x = document.getElementById("height").value;
+      myBox().style.height = x + "px";
+    }
+    function myWidth() {
+      var x = document.getElementById("width").value;
+      myBox().style.width = x + "px";
+    }
     function myTextFontBold() {
-      myOutput().style.fontWeight = "bold";
+      if (document.getElementById('bold').checked) {
+        myOutput().style.fontWeight = "bold";
+      }
+      else { 
+        myOutput().style.fontWeight = "normal";
+      } 
     }
     function myTextFontItalic() {
-      myOutput().style.fontStyle = "italic";
+      if (document.getElementById('italic').checked) {
+        myOutput().style.fontStyle = "italic";
+      }
+      else {
+        myOutput().style.fontStyle = "normal";
+      }
     }
     function myTextDecor() {
-      myOutput().style.textDecoration = "underline";
+      if (document.getElementById('underline').checked) {
+        myOutput().style.textDecoration = "underline";
+      }
+      else {
+        myOutput().style.textDecoration = "none";
+      }
     }
     function myTextAlignL() {
       myOutput().style.textAlign = "left";
@@ -38,67 +82,86 @@
     function myTextVerticalB() {
       myOutput().style.verticalAlign = "bottom";
     }
-
+    function myBorder() {
+      var x = document.getElementById("border").value;
+      myBox().style.padding = x + "px";
+    }
+    function myPadding() {
+      var x = document.getElementById("padding").value;
+      myOutput().style.padding = x + "px";
+    }
+    function myTextColor() {
+      var x = document.getElementById("textcolor").value;
+      myOutput().style.color = x;
+    }
+    function myBackColor() {
+      var x = document.getElementById("backcolor").value;
+      document.getElementById("back").style.backgroundColor = x;
+    }
+    function myBorderColor() {
+      var x = document.getElementById("bordercolor").value;
+      myBox().style.backgroundColor = x;
+    }
   </script>
 </head>
 <body>
   <label for="content">Content: </label>
-  <input type="text" id="content" name="content" value="Your text" oninput="myText()"><br>
-  
+  <input type="text" id="content" name="content" value="Your text" oninput="myText()" size="15">
+  <br>
+  <br>
   <label for="text-size">Size: </label>
-  <input type="number" id="text-size" name="size" min="1" max="50" value="10">
+  <input type="number" id="textsize" name="size" value="16" onchange="myTextSize()">
   <label> Style: </label>
-  <input type="checkbox" id="bold" name="font" value="bold" onclick="myTextFontBold()">
+  <input type="checkbox" id="bold" name="font" value="bold" onchange="myTextFontBold()">
   <label for="bold"> Bold</label>
-  <input type="checkbox" id="italic" name="font" value="italic" onclick="myTextFontItalic()">
+  <input type="checkbox" id="italic" name="font" value="italic" onchange="myTextFontItalic()">
   <label for="italic"> Italic</label>
-  <input type="checkbox" id="underline" name="font" value="underline" onclick="myTextDecor()">
+  <input type="checkbox" id="underline" name="font" value="underline" onchange="myTextDecor()">
   <label for="underline"> Underline</label>
   <br>
-
+  <br>
   <label for="height">Height: </label>
-  <input type="number" id="height" name="height" value="10"> 
+  <input type="number" id="height" name="height" placeholder="example - 85" onchange="myHeight()"> 
   <label for="width">Width: </label>
-  <input type="number" id="width" name="width" value="10"><br>
-  
-
-  
+  <input type="number" id="width" name="width" placeholder="example - 97" onchange="myWidth()">
+  <br>
+  <br>
   <label> Align: </label>
-  <input type="radio" id="aleft" name="hor_position" value="left" onclick="myTextAlignL()">
+  <input type="radio" id="aleft" name="hor_position" value="left" onclick="myTextAlignL()" checked>
   <label for="left">Left</label>
   <input type="radio" id="amid" name="hor_position" value="middle" onclick="myTextAlignM()">
   <label for="mid">Middle</label>
   <input type="radio" id="aright" name="hor_position" value="right" onclick="myTextAlignR()">
   <label for="right">Right</label>
   <br>
-
+  <br>
   <label> Vertical: </label>
   <input type="radio" id="vtop" name="ver_position" value="top" onclick="myTextVerticalT()">
   <label for="top">Top</label>
-  <input type="radio" id="vmid" name="ver_position" value="middle" onclick="myTextVerticalM()">
+  <input type="radio" id="vmid" name="ver_position" value="middle" onclick="myTextVerticalM()" checked>
   <label for="middle">Middle</label>
   <input type="radio" id="vbot" name="ver_position" value="bottom" onclick="myTextVerticalB()">
   <label for="bottom">Bottom</label>
   <br>
-
+  <br>
   <label> Text Color: </label>
-  <input type="color" id="textcolor" name="textcolor" value="#ffffff">
+  <input type="color" id="textcolor" name="textcolor" value="#ffffff" onchange="myTextColor()">
   <label> Back Color: </label>
-  <input type="color" id="backcolor" name="backcolor" value="#000000">
+  <input type="color" id="backcolor" name="backcolor" value="#000000" onchange="myBackColor()">
   <label> Border Color: </label>
-  <input type="color" id="bordercolor" name="bordercolor" value="#ff0000">
+  <input type="color" id="bordercolor" name="bordercolor" value="#ff0000" onchange="myBorderColor()">
   <label> Size: </label>
-  <input type="range" id="somesize" name="somesize" value="20">
+  <input type="range" id="border" name="border" value="1" onchange="myBorder()">
   <br>
-
+  <br>
   <label> Padding: </label>
-  <input type="range" id="padding" name="padding" value="5">
+  <input type="range" id="padding" name="padding" value="0" onchange="myPadding()">
   <br>
-
-  <table id="box" style="border: 1px solid black;" height="100px;" width="100px">
-    <tr height="100px;" width="100px">
-     <td style="border: 1px solid black;" id="output"> Your text </td>
-    </tr>
+  <br>
+  <table id="box">
+    <tr id="back" style="background-color: black;" >
+     <td id="output"> Your text here </td>
+    </tr> 
   </table>
 </body>
 </html>
