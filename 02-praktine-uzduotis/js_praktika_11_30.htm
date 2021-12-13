@@ -189,10 +189,46 @@
     console.log(sum);
  */
     //18.
+/*
+    var n = 123545435;
+    function reverseN(n) {
+        return (
+        parseFloat(
+         n
+            .toString()
+            .split('')
+            .reverse()
+            .join('')
+        ) * Math.sign(n)
+        )                 
+    }
+    console.log(reverseN(n));
+*/
+    //19.
+/*
+    i = 30;
+    cm = 33;
+    console.log(i + 'inches = ~' + Math.floor(i / 0.39370) + 'cm')
+    console.log(cm + 'cm = ~' + Math.floor(cm * 0.39370) + ' inches')
+*/
+    //20.
+/*
+    var p = 2;
+    var i = 100;
+    var m = 0;
+    for (var i; i <= 200000; i += i * (p * 0.01)) {
+    console.log(i + ' per ' + (m++) + ' metus(-u)'); {
+        if (i >= 100000) {break; }
+    }
+    }
+*/
+    //21.
 
-    var n = 123;
-
-
+    var l = 2;
+    var t = 500000;
+    for (var l; l <= t/2; l += l*2) {
+        console.log(l)
+    }
     </script>
 </body>
 </html>
