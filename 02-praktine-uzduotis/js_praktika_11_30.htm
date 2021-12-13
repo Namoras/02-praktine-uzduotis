@@ -53,6 +53,15 @@
         }
     }
 */
+
+    //8. 
+/*    let sum = 0;
+        for (let sum = 0; sum <= 110; sum += Math.floor(Math.random() * 11)) {
+            console.log(sum); { 
+                if (sum >= 100) { break; }
+            }
+        }
+*/
     //9.
 /*    for (var i = 0; i < 20; i++) {
         var count = 0;
@@ -64,23 +73,6 @@
             if (count === 7) {break; } 
         }
     }
-*/
-    //8. 
-/*    let sum = 0;
-        for (let sum = 0; sum <= 110; sum += Math.floor(Math.random() * 11)) {
-            console.log(sum); { 
-                if (sum >= 100) { break; }
-            }
-        }
-*/
-    //16.
-/*  let n = 1233;
-    let sum = 0;
-    while (n) {
-        sum += n %10;
-        n = Math.floor(n / 10);
-    }
-    console.log(sum);
 */
     //11.
 /*
@@ -94,12 +86,113 @@
     console.log (text);
 */
     //12.
+/*
     var n = 10;
         for (var n = 10; n <= 99; n += 1) {
-            console.log(n);
         var x = n;
-        console.log(((x % 10)*10 + Math.floor(x / 10)));
+        var m = (((x % 10)*10 + Math.floor(x / 10)));
+        var d = Math.floor(x / 10);
+        var v = x % 10;
+        if (n == m + 36 && d == v *3) {
+            console.log(n)
         }
+    }
+*/
+    //13.
+/*
+    var n = 0;
+    for (var n = 1000; n <= 9999; n += 1) {
+        //console.log(n)
+        var p = Math.floor(n / 1000);
+        var f = n - (p*1000);
+        //console.log(f);
+        if (p === 2 ) {
+            let two = ((p*1000)+f);
+            if (Math.floor(two / 998) === two / 998)
+            console.log(two);
+        }
+        if (p === 4 ) {
+            let four = ((p*1000)+f);
+            if (Math.floor(four / 998) === four / 998)
+            console.log(four);
+        }
+        if (p === 6 ) {
+            let six = ((p*1000)+f);
+            if (Math.floor(six / 998) === six / 998)
+            console.log(six);
+        }
+        if (p === 8 ) {
+            let eight = ((p*1000)+f);
+            if (Math.floor(eight / 998) === eight / 998)
+            console.log(eight);
+        }
+    }
+*/
+    //14.
+/*
+    var y = 0;
+    for (var y = 1; y <= 2022; y += 1) {
+        if (y / 400 % 1 == 0) {
+        console.log(y);
+        }
+        else if(y / 100 % 1 == 0) {
+        }
+        else if(y / 4 % 1 == 0) {
+        console.log(y);
+        }
+    }
+*/
+    //15.
+/*
+    var n = 913;
+    var m = 1062;
+    for (var n; n <= m; n += 1) {
+        //console.log(n);
+        var p = Math.floor(n % 10);
+        //console.log(p);
+        var f = n - p;
+        //console.log(f);
+        if (p === 2) {
+            console.log(f+p);
+        }
+        if (p === 4) {
+            console.log(f+p);
+        }
+        if (p === 6) {
+            console.log(f+p);
+        }
+        if (p === 8) {
+            console.log(f+p);
+        }
+    }
+*/
+    //16.
+/*
+    var n = 76946453453;
+    let x;
+    while (n > 10){
+        x = Math.floor(n / 10);
+        n = x;
+        if (x<10) {
+            console.log(x);
+        }
+    }
+*/
+    //17.
+/*
+    var n = 12342;
+    var sum = 0;
+    while (n) {
+        sum += n %10;
+        n = Math.floor(n / 10);
+    }
+    console.log(sum);
+ */
+    //18.
+
+    var n = 123;
+
+
     </script>
 </body>
 </html>
