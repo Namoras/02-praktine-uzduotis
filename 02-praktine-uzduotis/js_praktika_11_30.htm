@@ -223,12 +223,31 @@
     }
 */
     //21.
-
+/*
     var l = 2;
-    var t = 500000;
-    for (var l; l <= t/2; l += l*2) {
-        console.log(l)
+    var m = 60000;
+    var d = 0;
+    for (var l; l < m; l += l) { 
+        console.log('po ' + (d++) + ' dienu lelija tures ' + l + ' ziedus.'); {
+            if (l > m/2) {
+                console.log('lelija uzklojo puse ezero');
+            }
+        }
     }
+*/
+    //22.
+/*
+    var m1 = 3;
+    var m = 1;
+    var n = 20;
+    var sum = 0;
+    for (var m1; m1 <= n; m1 += m) {
+         sum += m1;
+        if (sum >= n && sum <= n + m1) {
+           console.log('Sodininkas dirbs ' + Math.ceil(sum / m1) + ' dienas'); 
+        }
+    }
+*/
     </script>
 </body>
 </html>
