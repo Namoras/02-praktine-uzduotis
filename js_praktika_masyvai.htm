@@ -8,14 +8,150 @@
 </head>
 <body>
     <script>
-        //1. 
-/*        function random () {
-        Array.from({length: 30}, () => Math.floor(Math.random() * 20+5));
-    }
-        console.log (Array.from({length: 30}, () => Math.floor(Math.random() * 20+5)));
-*/
-        //2.
 
+    //1. 
+    var x;
+    var arr = [];
+    for (a=0; a < 30; a++) {
+        x = Math.floor(Math.random() * 20+5);
+        arr.push(x);
+    }
+    console.log ('masyvas ' + arr)
+
+    //2.a
+    //DESTYTOJO
+    var reiksmiuDaugiauUz10 = 0;
+    var arrIlgis = arr.length;
+    for (i = 0; i < arrIlgis; ++i) {
+        if (arr[i] > 10) {
+            reiksmiuDaugiauUz10++;
+        }
+    }
+    console.log('reiksmiu daugiau uz 10 ' + reiksmiuDaugiauUz10);
+
+/*  //MANO
+    ten = arr.filter(ten);
+    function ten(num) {
+        return num > 10;
+    }
+    console.log(ten);
+    console.log(ten.length);
+*/
+    //2.b
+    //DESTYTOJO
+    var didziausiaReiksme = 0;
+    var didziausiaReiksmeIndex = [];
+
+    for(i =0; i < arrIlgis; ++i) {
+        if(arr[i] > didziausiaReiksme) {
+            didziausiaReiksme = arr[i];
+        }
+    }
+    for(i =0; i < arrIlgis; ++i) {
+        if(arr[i] == didziausiaReiksme) {
+            didziausiaReiksmeIndex.push(i);
+        }
+    }
+
+    console.log(didziausiaReiksme);
+    console.log(didziausiaReiksmeIndex);
+/*  //MANO  
+    var max = Math.max(...arr);
+    var index = arr.indexOf(max);
+    console.log(max);
+    console.log(index);
+*/
+    //2.c
+    //MANO
+/*  let arrL = arr.length
+    var sum = 0;
+    for (let b = 0; b < arrL; b++) {
+        num = arr[b++];
+        //console.log(num);
+        sum = sum + arr[b];
+        //console.log(sum);
+    }
+*/
+    //DESTYTOJO
+    var indexSum = 0;
+        for(i = 0; i < arrIlgis; i+=2) {
+            indexSum += i;
+        }
+    console.log(indexSum)
+    //2.d
+    //DESTYTOJO
+    var arrDu = [];
+        for(i = 0; i < arrIlgis; ++i) {
+            arrDu.push(arr[i]-i);
+        }
+        console.log(arrDu);
+    //2.e
+    //DESTYTOJO
+    for(i = 0; i < 10; ++i) {
+        arr.push(Math.floor(Math.random() * 20+5));
+    }
+    console.log(arr);
+    //2.f
+    //DESTYTOJO
+    var lyg = [];
+    var nelyg = [];
+        for(i = 0; i < arrIlgis; ++i) {
+            if (i % 2 === 1) {
+                nelyg.push(arr[i]);
+            } else {
+                lyg.push(arr[i]);
+            }
+        }
+        console.log(lyg);
+        console.log(nelyg);
+    //2.g
+    //DESTYTOJO
+    for(i = 0; i < arrIlgis; i+=2) {
+            if (arr[i] > 15) {
+                arr[i] = 0;
+            }
+        }
+    
+    console.log(arr);
+    //2.h
+    //DESTYTOJO
+  var maziausiasIndeksas = -1;
+/*    for(i = 0; i < arrIlgis; ++i) {
+        if (arr[i] > 10){
+            maziausiasIndeksas = i;
+            break;
+        }
+    }
+*/
+    let j = 0;
+    while (maziausiasIndeksas < 0) {
+        if (arr[j] > 10){
+            maziausiasIndeksas = j;
+        }
+        j++;
+    }
+    console.log(maziausiasIndeksas)
+    //3.
+/*   var lettArr = [];
+    var lett = 'ABCD';
+    for (a=0; a < 20; a++) {
+        x = lett[Math.floor(Math.random() * lett.length)];
+        lettArr.push(x);
+        console.log(lettArr);
+    }
+    function makeid() {
+        var abcd = '';
+        var letters = "ABCD";
+        for (var i = 0; i < 200; i++)
+            abcd += letters.charAt(Math.floor(Math.random() * letters.length));
+
+        return abcd;
+    }
+    let arRay = [];
+    console.log(makeid());
+    arRay.push(makeid());
+    console.log(arRay);
+*/
     </script>
 </body>
 </html>
